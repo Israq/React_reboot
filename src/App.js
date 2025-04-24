@@ -6,7 +6,7 @@ function App() {
   const [role, setRole] = useState("dev");
   const showEmplyees = true;
   return (
-    <div className="App bg-red-300">
+    <div className="App">
       {showEmplyees ? (
         <>
           <input
@@ -16,8 +16,38 @@ function App() {
               setRole(e.target.value);
             }}
           />
-          <Employee name="Israq" role="Soft Engineer" />
-          <Employee name="John" role={role} />
+          <div class="flex flex-wrap">
+            <Employee
+              name="Israq"
+              role="Soft Engineer"
+              img="https://images.pexels.com/photos/10131167/pexels-photo-10131167.jpeg"
+            />
+            <Employee
+              name="John"
+              role={role}
+              img="https://images.pexels.com/photos/2072456/pexels-photo-2072456.jpeg"
+            />
+            <Employee
+              name="Israq"
+              role="Soft Engineer"
+              img="https://images.pexels.com/photos/10131167/pexels-photo-10131167.jpeg"
+            />
+            <Employee
+              name="John"
+              role={role}
+              img="https://images.pexels.com/photos/2072456/pexels-photo-2072456.jpeg"
+            />
+            <Employee
+              name="Israq"
+              role="Soft Engineer"
+              img="https://images.pexels.com/photos/10131167/pexels-photo-10131167.jpeg"
+            />
+            <Employee
+              name="John"
+              role={role}
+              img="https://images.pexels.com/photos/2072456/pexels-photo-2072456.jpeg"
+            />
+          </div>
         </>
       ) : (
         <EmployeeNot />
